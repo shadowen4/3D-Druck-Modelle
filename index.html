@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meine 3D-Drucke</title>
+  <style>
+    :root { --bg:#0f1115; --card:#181b22; --text:#e8eaf0; --accent:#ff6b2c; --muted:#8b91a1; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:system-ui,sans-serif; background:var(--bg); color:var(--text); line-height:1.5; }
+    header { text-align:center; padding:56px 20px 32px; }
+    header h1 { font-size:2.2rem; }
+    header h1 span { color:var(--accent); }
+    header p { color:var(--muted); margin-top:8px; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:20px; max-width:1000px; margin:0 auto; padding:20px; }
+    .card { background:var(--card); border-radius:14px; overflow:hidden; transition:transform .2s; }
+    .card:hover { transform:translateY(-4px); }
+    .card img { width:100%; aspect-ratio:1/1; object-fit:cover; display:block; background:#242833; }
+    .card div { padding:14px 16px 18px; }
+    .card h2 { font-size:1.1rem; }
+    .card p { color:var(--muted); font-size:.9rem; margin-top:4px; }
+    footer { text-align:center; color:var(--muted); padding:40px 20px; font-size:.85rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Meine <span>3D-Drucke</span></h1>
+    <p>Modelle, die ich selbst gedruckt habe und richtig cool finde.</p>
+  </header>
+
+  <main class="grid">
+    <article class="card">
+      <img src="fotos/modell1.jpg" alt="Modell 1">
+      <div>
+        <h2>Modell 1</h2>
+        <p>Kurze Beschreibung hier.</p>
+      </div>
+    </article>
+    <!-- Weitere Modelle: den ganzen <article>-Block kopieren und anpassen -->
+  </main>
+
+  <footer>Kein Shop, nur Spaß am Drucken.</footer>
+</body>
+</html>
